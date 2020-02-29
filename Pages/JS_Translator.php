@@ -41,7 +41,8 @@ include "../Includes/Navigation.php"
                 <input class="switch" type="checkbox" id="switch" name="theme" /><label class="darkb" for="switch">Toggle</label>
         
         
-        
+        <span><p>Декларирайте променлива а и константа b.</p></span>
+
 <form action="" method="POST" id="formSubmitCode">
     <div class="form-group">
          <label for="code" style="margin-left: 20px;">Въведете код:</label>
@@ -72,7 +73,7 @@ include "../Includes/Navigation.php"
 
     </div>
 
-<body>
+<body>  
 </html>
 <script src="../JS/Button change dark light js.js"></script>
 
