@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    font-family: montserrat;
+}
+
+h1{
+    color:#0e74c2;
+    font-size: 3em;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 4%
+}
+
+h2{
+    color:black;
+    font-size: 2em;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2% 10% 4%;
+    font-size: large;
+}
+
+strong {
+    color: #338ef7;
+}
+
+.code {
+    width: inherit;
+    margin: auto 10%;
+    padding: 2%;
+    border: 1px solid black;    
+    border-radius: 15px;
+    background-color: cornsilk;
+
+}
+
+.excercises-button {
+    border-radius: 20px;
+	border: 1px solid #2d77cc;
+	background-color: #2d77cc;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 12px 45px;
+    letter-spacing: 1px;
+    position: fixed;
+    float: right;
+    bottom: 5%;
+    right: 5%;
+}
+
+.excercises-button:hover{
+    background-color: #338ef7;
+}

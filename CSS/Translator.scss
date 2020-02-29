@@ -1,0 +1,192 @@
+@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+html {
+    height: 100%;
+	font-family: 'Montserrat'; //Change
+	
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+	--color-text: #333333;
+
+}
+.box{
+	position: absolute;
+	margin-top:70px;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+}
+.icon{
+	width: 120px;
+	position: relative;
+	display: inline-block;
+}
+.icon i{
+	color: #2d77cc;
+	font-size: 80px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+}
+.icon span{
+	position: relative;
+	width: 360px;
+	background: #2d77cc;
+	color: white;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 8px;
+	display: block;
+	margin:0 auto;
+	opacity: 0;
+	transition: 0.6s opacity;
+}
+.icon span:before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top:-5px;
+	background: #2d77cc;
+	z-index: -1;
+	left:50%;
+}
+.icon:hover > span{
+	opacity: 1;
+}
+html[data-theme='dark'] {
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #3694FF;
+    --color-text: #B5B5B5;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--color-headings);
+}
+
+.Main_Container{
+	background-color: var(--bg-panel);
+	margin-left: 20%;
+	margin-right: 20%;
+	max-width: 1000px;
+    padding: 5em;
+    border-radius: 15px;
+    grid-template-columns: 80% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "title switch"
+        "content content";
+
+    h1 {
+        margin: 0;
+        color: var(--color-headings);
+    }
+
+    p {
+        color: var(--color-headings);
+        grid-area: content;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        margin-top: 2em;
+    }
+}
+
+
+
+.header{
+	top: 0px;
+}
+.form-control {
+	min-height:300px; 
+	width: 97.6%;
+	margin: auto;
+}
+
+.dialog{
+	z-index:101;
+}
+
+
+.fade {
+opacity: 0;
+-webkit-transition: opacity 0.15s linear;
+-moz-transition: opacity 0.15s linear;
+-o-transition: opacity 0.15s linear;
+transition: opacity 0.15s linear;
+}
+.fade.in {
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.darkb {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+.darkb:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.switch:checked + .darkb {
+	background: var(--color-headings);
+}
+
+.switch:checked + .darkb:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.darkb:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}

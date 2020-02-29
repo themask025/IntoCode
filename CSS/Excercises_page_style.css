@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    font-family: montserrat;
+    
+}
+
+h1{
+    color:#0e74c2;
+    font-size: 3em;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 2%
+}
+h2{
+    color:black;
+    font-size: 2em;
+    margin: 2% auto 2% 15%;
+}
+
+.lesson{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+.lesson-disabled{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: grey;
+}
+
+button{
+border-radius: 20px;
+	border: 1px solid #2d77cc;
+	background-color: #2d77cc;
+	color: #FFFFFF;
+	font-size: 1.5em;
+    padding: 2px;
+    margin-top: 1%;
+	letter-spacing: 1px;
+}
+
+button :nth-child(1){
+    margin-top: 5%;
+}
+span.secondary_text{
+    float: left;
+    margin-top: 0;
+    margin-left: 15px;
+}
+span.thirdl_text{
+    color:rgb(5, 212, 5);
+    float: right;
+}
+span.thirdm_text{
+    color: yellow; 
+    float: right;
+}
+span.primary_text{
+    float: center;
+}
+
+@media (max-width: 952px){
+.lesson{
+    margin-left: 0;
+    margin-right: 0;
+}
+h1{
+    margin-left: 0;
+}
+}
